@@ -1,8 +1,9 @@
 from flask import Flask, request, jsonify, send_file, render_template
 import re
 from io import BytesIO
+import nltk
 
-# nltk.download('stopwords')
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import matplotlib.pyplot as plt
